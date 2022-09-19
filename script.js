@@ -7,5 +7,6 @@ notes.forEach(btn => {
 
 function startMusic(e) {
     let theNote = new Audio(`${e.target.className}.wav`)
+    theNote.currentTime = 0
     theNote.play()
 }
